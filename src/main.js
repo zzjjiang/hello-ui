@@ -4,6 +4,11 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
+router.beforeEach((to, from, next) => {
+  console.log(to.path)
+  console.log(from.path)
+  next()
+})
 
 new Vue({
   router,
