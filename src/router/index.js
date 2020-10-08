@@ -6,6 +6,10 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [
     {
+      path: '/parent',
+      component: () => import('../views/Parent.vue')
+    },
+    {
       path: '/home/:id',
       name: 'home',
       component: () => import('../views/Home'),
