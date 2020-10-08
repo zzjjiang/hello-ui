@@ -2,8 +2,8 @@
   <div id="app">
     <!-- <button @click="sendMsg">app传值</button>
     <m-parent></m-parent> -->
-    <router-link to='/home'>homelink</router-link>
-    <button @click="toHome">homeBtn</button>
+    <!-- <router-link to='/home'>homelink</router-link>
+    <button @click="toHome">homeBtn</button> -->
     <router-view />
   </div>
 </template>

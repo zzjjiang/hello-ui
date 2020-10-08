@@ -6,8 +6,9 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [
     {
-      path: '/parent',
-      component: () => import('../views/Parent.vue')
+      path: '/',
+      component: () => import('../views/Parent.vue'),
+      redirect: '/form'
     },
     {
       path: '/home/:id',
@@ -17,6 +18,22 @@ export default new VueRouter({
         path: '/child',
         component: () => import('../views/Son')
       }]
+    },
+    {
+      path: '/layout',
+      component: () => import('../views/element/Layout.vue')
+    },
+    {
+      path: '/pup',
+      component: () => import('../views/element/Pup.vue')
+    },
+    {
+      path: '/table',
+      component: () => import('../views/element/Table.vue')
+    },
+    {
+      path: '/form',
+      component: () => import('../views/element/Form.vue')
     }
   ]
 })
